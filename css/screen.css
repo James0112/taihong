@@ -1,0 +1,169 @@
+
+@media (min-width: 350px)
+{
+	/* ------------------- change width*/
+	.acontent,
+	.ncontent,
+	.allcontent,
+	.fcontent,
+	.mcontent,
+	.ccontent,
+	.foocon{
+		width: 316px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 430px)
+{
+	/* ------------------- change width*/
+	.acontent,
+	.ncontent,
+	.allcontent,
+	.fcontent,
+	.mcontent,
+	.ccontent,
+	.foocon{
+		width: 396px;
+	}
+	.fcon{ margin: 5px 9px;}
+}
+
+@media (min-width: 490px)
+{
+	/* ------------------- change width*/
+	.acontent,
+	.ncontent,
+	.allcontent,
+	.fcontent,
+	.mcontent,
+	.ccontent,
+	.foocon{
+		width: 456px;
+	}
+	
+	.fcon{ margin: 5px 10px;}
+	.slide{ padding: 70px, 0px; }
+	.footer{ padding: 70px, 0px; }
+}
+
+@media (min-width: 728px)
+{
+	/* ------------------ show nav hide menu*/
+	.menu-bar{ display: none; }
+	.nav-menu{ display: none; }
+	.nav-bar{ display: block; }
+	
+	/* ------------------ change width*/
+	.acontent,
+	.ncontent, 
+	.allcontent,
+	.fcontent,
+	.mcontent,
+	.ccontent,
+	.foocon{
+		width: 656px;
+	}
+
+	.acontent img{ 
+		width: 85%; 
+	}
+
+	/* ----------------- change layout------pro*/
+	.pro{
+		width: 32%;
+		display: inline-block;
+	}
+
+	.pic img{
+		width: 95%;
+	}
+	
+	/* ---------------- change layout------factory*/
+	.box{ 
+		position: relative;
+		margin-bottom: 15px; 
+	}
+
+	.fimg{
+		width: 66%;
+		margin-left: 1%;
+		margin-right: 1%;
+		position: relative;
+		left: 0;
+	}
+
+	.fcon{
+		width: 25%;
+		height: 190px;
+		margin-left: 1%;
+		margin-right: 1%;
+		position: absolute;
+		right: 0;
+		bottom: 5px;
+	}
+	
+	/* ---------------- change layout------manage*/
+	.framenarrow img{
+		display: none;
+	}
+	
+	.framewide img{
+		display: block;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+	}
+
+	/*  ---------------- change other size*/
+	.slide{ padding: 90px 0px; }
+	.footer{ padding: 100px 0px;}
+}
+
+
+@media (min-width: 876px)
+{
+	/* ---------------- change width*/
+	.acontent,
+	.ncontent,
+	.allcontent,
+	.fcontent,
+	.mcontent,
+	.ccontent,
+	.foocon{
+		width: 832px;
+	}
+ 
+	.acontent img{ 
+		width: 76%; 
+	}
+
+	/* ------------------- change layout------factory*/
+	.fcon{
+		height: 253px;
+	}
+}
+
+@media (min-width: 1000px)
+{
+	/* ------------------- change width*/
+	.acontent,
+	.ncontent,
+	.allcontent,
+	.fcontent,
+	.mcontent,
+	.ccontent,
+	.foocon{
+		width: 960px;
+	}
+	
+	/* ------------------- change layout------factory*/
+	.fimg{
+		width: 68%;
+	}
+
+	.fcon{
+		width: 24%;
+		height: 310px;
+	}
+}
