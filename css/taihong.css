@@ -11,6 +11,7 @@ body{
 	"STXiHei", 
 	"华文细黑", 
 	sans-serif; 
+	cursor: default;
 }
 
 h1{
@@ -100,13 +101,12 @@ p{
 	text-align: center;
 }
 
-#about,
-#allpro,
-#manage{ background-color: #ecf0f1; }
+.about,
+.factory,
+.contact{ background-color: #ecf0f1; }
 
-#newpro,
-#factory,
-#contact{ background-color: #fff; }
+.allpro,
+.manage{ background-color: #fff; }
 
 .acontent,
 .ncontent,
@@ -175,7 +175,7 @@ p{
 #menu{ 
 	position: relative;
 	left: -205px;
-	background-color: rgba(238, 238, 238, 0.6); 
+	background-color: rgba(238, 238, 238, 0.8;)
 	transition: all 0.3s ease-in-out 0.1s;
 }
 
@@ -185,7 +185,7 @@ p{
 	clear: both;
 	border-bottom: 1px solid #ccc;
 	border-right: 1px solid #ccc;
-	background-color: rgba(230, 230, 230, 0.6);
+	background-color: rgba(230, 230, 230, 0.8);
 }
 
 #menu li:first-child{
@@ -194,7 +194,7 @@ p{
 	height: 43px; 
 	border-right: 0px;
 	border-bottom: 0px;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 #menu p{ margin: 66px 11px 0px;}
@@ -212,6 +212,7 @@ p{
 }
 
 #menu li a{
+	width: 68px;
 	height: 43px;
 	line-height: 43px;
 	padding: 0px 86px 0px 50px;
@@ -226,47 +227,14 @@ p{
 	transition-timing-function: linear;
 }
 #menu li a:hover{
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 6px 0px 3px 0 #ccc inset;
 }
 
 .actived{
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 6px 0px 3px 0 #ccc inset;
 }
-
-
-/* menu-bar type_test
- ----------------------------------- */
-/*.menu-bar{ background-color: rgba(255, 255, 255, 0.6); }
-
-#nav-menu{ display: none; }
-
-#nav-menu li:first-child{
-	border-top: 1px solid rgba(204, 204, 204, 0.8);
-}
-
-#nav-menu li{
-	border-bottom: 1px solid rgba(204, 204, 204, 0.8);
-}
-
-#nav-menu li a{
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	font-weight: 300;
-	font-family: STXihei,"华文细黑";
-	text-decoration: none;
-	color: #6e6e6e;
-	display: block;
-	transition-duration: 0.3s;
-	transition-timing-function: linear;
-}
-
-#nav-menu li a:hover{ background-color: rgba(211, 211, 211, 0.6); }
-
-.selected{ background-color: rgba(211, 211, 211, 0.6); } */
-
 
 /* nav-bar
  ----------------------------------- */
@@ -320,42 +288,6 @@ p{
 
 .selected{ background-color: #e74c3c; }
 
-
-/* nav-bar type_test
- ----------------------------------- */
-
-/*.logo{ display: none; }
-
-#nav{ 
-	padding: 0; 
-	display: block;
-	z-index: 2;
-}
-
-#nav li{
-	width: 33.33333333333%;
-	display: inline-block;
-}
-
-#nav li a{
-	height: 30px;
-	line-height: 30px;
-	font-weight: 300;
-	font-family: STXihei,"华文细黑";
-	text-decoration: none;
-	color: #eee;
-	border-bottom: 1px solid #ccc;
-	box-shadow: 5px 0px 5px 0px #ccc inset;
-	transition-duration: 0.3s;
-	transition-timing-function: linear;
-	display: block;
-	overflow: hidden;
-}
-
-#nav li a:hover{ background-color: #888; }
-
-.selected{ background-color: #888; }*/
-
 /* ------------------------------ about ------------------------ */
 
 .acontent img{
@@ -377,7 +309,7 @@ p{
 
 .acontent p{ margin: 0; }
 
-/* ------------------------------- newpro ------------------------- */
+/* ------------------------------- allpro ------------------------- */
 
 .pro{ margin: 5px 0; }
 
@@ -385,16 +317,57 @@ p{
 	margin: 8px 8px 23px;
 }
 
-.pictext{ margin-bottom: 45px; }
-
 .pictext h3{
+	font-size: 20px;
 	margin: 0 0 5px 0;
+	text-align: center;
 }
 
 .pictext h6{ 
+	font-size: 16px;
 	padding: 0;
 	margin: 0 0 5px 0;
 	color: #e74c3c;
+	text-align: center;
+}
+
+/* ------------------- category */
+.cate{ padding-top: 40px; }
+
+.catetitle{
+	padding-bottom: 25px;
+	margin-left: 2%;
+	margin-right: 2%;
+	position: relative;
+	border-bottom: 1px solid #e74c3c;
+}
+
+.catename{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	padding: 0px;
+	position: absolute;
+	left: 0px;
+}
+
+.more a{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "华文细黑";
+	color: #222;
+	padding: 0;
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 1px solid #222;
+}
+
+.more a:visited{
+	color: #777;
+	border-bottom: #777;
 }
 
 /* ------------------------------ factory ------------------------ */
@@ -421,7 +394,6 @@ p{
 .ftext{
 	padding: 5px 0;
 	margin-bottom: 5px;
-	/*color: #fff;*/
 	line-height: 30px;
 	font-size: 18px;
 	font-family: 
@@ -443,51 +415,6 @@ p{
 .framewide img{
 	display: none;
 }
-/*.imageRotation{
-	position: relative;
-	width: 100%;
-	height: 188px;
-	overflow: hidden;
-}
-
-.imageBox{
-	position: absolute;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-}
-
-.imageBox img{
-	display: block;
-	width: 296px;
-	float: left;
-}
-
-.imageBox img:hover{
-	border: 2px solid rgba(10, 19, 28, 0.6);
-	box-sizing: border-box;
-}
-
-.icoBox{
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
-}
-
-.icoBox li{
-	display: inline-block;
-	height: 12px;
-	width: 12px;
-	margin: 0 4px;
-	background: url("images/choose.png");
-	cursor: pointer;
-}
-
-.icoBox li.active{
-	background-position: 0px -12px;
-	cursor: default;
-}*/
-
 
 /* --------------------------- contact ------------------------- */
 

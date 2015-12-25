@@ -1,0 +1,204 @@
+.zhi,
+.che,
+.wan,
+.footer{
+	padding: 50px 0;
+}
+
+.zhi,
+.wan{ background-color: #ecf0f1; }
+
+.che{ background-color: #fff; }
+
+.zcontent,
+.ccontent,
+.wcontent,
+.foocon{ 
+	width: 296px; 
+	position: relative;
+}
+
+.date{ text-align: left;}
+
+.datetitle{
+	padding-bottom: 25px;
+	margin-left: 3%;
+	margin-right: 2%;
+	position: relative;
+}
+
+.datename{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	padding: 0;
+	position: absolute;
+	left: 0px;
+	border-bottom: 2px solid #e74c3c;
+	cursor: default;
+}
+
+.back a{
+	padding: 8px 10px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "华文细黑";
+	text-decoration: none;
+	color: #555;
+	background-color: #fff;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 2%;
+	border-radius: 5px;
+	position: absolute;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out 0.1s;
+}
+
+.back a:active{
+	background-color: #e74c3c;
+}
+.back a:hover{
+	background-color: #e74c3c;
+}
+
+#back1 a{
+	left: 0px;
+	top: 6px;
+}
+
+#back2 a{
+	right: 0px;
+}
+
+/* ------------------------------- allpro ------------------------- */
+.pro{
+	width: 47%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+/*
+.pictext{ 
+	text-align: center;
+}*/
+
+/* --------------------------- footer -------------------------- */
+/*
+.footext{
+	color: #fff;
+	margin: 5px 8px;
+}*/
+
+
+@media (min-width: 350px)
+{
+	/* ------------------- change width*/
+	.zcontent,
+	.ccontent,
+	.wcontent,
+	.foocon{ 
+		width: 316px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 430px)
+{
+	/* ------------------- change width*/
+	.zcontent,
+	.ccontent,
+	.wcontent,
+	.foocon{ 
+		width: 396px;
+	}
+
+}
+
+@media (min-width: 490px)
+{
+	/* ------------------- change width*/
+	.zcontent,
+	.ccontent,
+	.wcontent,
+	.foocon{ 
+		width: 456px;
+	}
+
+	/* ----------------- change layout------pro*/
+	.pro{
+		width: 31%;
+		margin-left: 1%;
+		display: inline-block;
+	}
+}
+
+@media (min-width: 728px)
+{
+	/* ------------------ show nav hide menu*/
+	.menu-bar{ display: none; }
+	.nav-menu{ display: none; }
+	.nav-bar{ display: block; }
+
+	/* ------------------ change width*/
+	.zcontent,
+	.ccontent,
+	.wcontent,
+	.foocon{ 
+		width: 656px;
+	}
+
+	/* ----------------- change layout------pro*/
+	.datetitle{ margin-left: 2%;}
+	.pro{
+		width: 23%;
+		margin-left: 1%;
+		display: inline-block;
+	}
+
+	.pic img{
+		width: 96%;
+	}
+
+	/*  ---------------- change other size*/
+	.zhi,
+	.che,
+	.wan,
+	.footer{ padding: 75px 0px;}
+}
+
+
+@media (min-width: 876px)
+{
+	/* ---------------- change width*/
+	.zcontent,
+	.ccontent,
+	.wcontent,
+	.foocon{ 
+		width: 832px;
+	}
+}
+
+@media (min-width: 1000px)
+{
+	/* ------------------- change width*/
+	.zcontent,
+	.ccontent,
+	.wcontent,
+	.foocon{ 
+		width: 960px;
+	}
+
+	/* ----------------- change layout------pro*/
+
+	.catetitle{ margin-right: 1%;}
+
+	.pro{
+		width: 18.5%;
+		margin-left: 1%;
+		/*margin-right: 0.5%;*/
+		display: inline-block;
+	}
+}
