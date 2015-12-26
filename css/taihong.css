@@ -4,13 +4,13 @@ body{
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	font-family: 
+/*	font-family: 
 	"Raleway",
 	"Microsoft YaHei", 
 	"微软雅黑", 
 	"STXiHei", 
 	"华文细黑", 
-	sans-serif; 
+	sans-serif; */
 	cursor: default;
 }
 
@@ -38,7 +38,8 @@ h4{
 	color: #8a8a8a;
 	font-family: 
 	"STXiHei", 
-	"华文细黑", 
+	"华文细黑"; 
+	font-weight: bold;
 }
 
 h3{
@@ -54,7 +55,6 @@ h3{
 h6{
 	padding: 5px 0;
 	margin-bottom: 5px;
-	/*color: #fff;*/
 	line-height: 30px;
 	font-size: 18px;
 	font-family: 
@@ -420,6 +420,7 @@ p{
 
 .ctext{
 	font-size: 30px;
+	font-family: "微软雅黑";
 	color: #555;
 	text-align: left;
 }
@@ -429,6 +430,8 @@ p{
 .footext{
 	color: #fff;
 	margin: 5px 8px;
+	font-family: "Microsoft YaHei";
+	font-size: 18px;
 }
 
 
