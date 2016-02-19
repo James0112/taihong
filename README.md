@@ -3,7 +3,7 @@
 
 泰红塑料制品厂官方网站，是由谌吉(James Chan)整体设计、开发制作。目前仍处于测试阶段，内容为临时填充。
 
-Get started at https://jameschan1220.github.io/taihong
+Get started at https://james0112.github.io/taihong
 
 ## Changelog
 ### 2015.01.05 --- 0.1.4
