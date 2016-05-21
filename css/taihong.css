@@ -3,65 +3,21 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
-	font-family: 
-	"Raleway",
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	"STXiHei", 
-	"华文细黑", 
-	sans-serif; 
 	cursor: default;
+	font-size: medium;
+	font-family:
+		Raleway,
+		STXihei,
+		"华文细黑",
+		"Microsoft YaHei",
+		"微软雅黑",
+		sans-serif;
 }
 
-h1{
-	color: #555;
-	font-size: 2.4em;
-	font-family: 
-	"STXiHei", 
-	"华文细黑", 
-}
-
-h2{
-	margin-bottom: 15px;
-	font-size: 2em;
-	color: #555;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
-}
-
-h4{
-	margin-bottom: 10px;
-	font-size: 22px;
-	color: #8a8a8a;
-	font-family: 
-	"STXiHei", 
-	"华文细黑", 
-}
-
-h3{
-	margin-bottom: 5px;
-	font-size: 30px;
-	font-family: 
-	"Raleway",
-	"STXiHei", 
-	"华文细黑", 
-	sans-serif; 
-}
-
-h6{
-	padding: 5px 0;
-	margin-bottom: 5px;
-	/*color: #fff;*/
-	line-height: 30px;
-	font-size: 18px;
-	font-family: 
-	"Raleway",
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+#body {
+	-webkit-transition: all 1s ease-in-out;
+		 -o-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
 }
 
 ul{
@@ -70,10 +26,46 @@ ul{
 	list-style: none;
 }
 
-p{
-	margin: 0 11px 35px 11px;
-	word-wrap: break-word;
+h2{
+	font-size: 2em;
+	color: #555;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
+
+h4{
+	margin-bottom: 10px;
+	font-size: 1.4em;
+	color: #8a8a8a;
+	font-weight: bold;
+}
+
+h3{
+	margin: 0 0 5px 0;
+	text-align: center;
+	font-size: 1.2em;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
+}
+
+h6{
+	padding: 0;
+	margin: 0 0 5px 0;
+	line-height: 30px;
+	text-align: center;
+	color: #e74c3c;
+	font-size: 1em;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
+}
+
+p{ margin: 0; }
 
 /* ---------------------------- layout ---------------------------- */
 
@@ -83,7 +75,7 @@ p{
 	height: 43px;
 	position: fixed;
 	z-index: 1;
-	background-color: rgba(238, 238, 238, 0.6); 
+	background-color: rgba(238, 238, 238, 0.6);
 }
 
 .nav-bar{
@@ -92,57 +84,38 @@ p{
 	z-index: 1;
 	width: 100%;
 	text-align: center;
-	/*background-color: rgba(255, 255, 255, 0.6); */
 }
 
-/* ------------------- slide */
-.slide{
+/* ------------------- color */
+
+.color-1{ background-color: #ecf0f1; }
+
+.color-2{ background-color: #fff; }
+
+#color-3{ background-color: #212c37; }
+
+.color{
 	padding: 60px 0;
 	text-align: center;
 }
 
-.about,
-.factory,
-.contact{ background-color: #ecf0f1; }
-
-.allpro,
-.manage{ background-color: #fff; }
-
-.acontent,
-.ncontent,
-.allcontent,
-.fcontent,
-.mcontent,
-.ccontent,
-.foocon{
+.content{
 	width: 296px;
 	margin: 0 auto;
 }
 
-.acontent img,
-.pic img,
-.fimg img{ 
-	width: 95%; 
+#about img,
+.pro img,
+.box img{
+	width: 95%;
 }
 
 /* ------------------- title */
-.title{ margin: 5px 0px 35px; }
+.content .title{ margin: 5px 0px 35px; }
 
-.title h2{ margin: 15px; }
-
-.title div{ 
-	margin-bottom: 10px;
-	font-size: 22px;
-	color: #8a8a8a;
-	font-family: 
-	"STXiHei", 
-	"华文细黑", 
-}
-
-.footer{
-	padding: 60px 0;
-	text-align: center;
-	background-color: #212c37;
+/* ------------------- footer */
+#footer{
+	/*text-align: center;*/
 }
 
 /* ----------------------------- nav -----------------------------*/
@@ -151,7 +124,7 @@ p{
  ----------------------------------- */
 
 /* toggle type */
-.toggle{ 
+#toggle{
 	margin: 0;
 	padding: 10px 0;
 	width: 40px;
@@ -162,9 +135,9 @@ p{
 	z-index: 11;
 }
 
-.toggle div:first-child{ margin: 0 auto; }
+#toggle div:first-child{ margin: 0 auto; }
 
-.toggle div{
+#toggle div{
 	max-width: 16px;
 	height: 3px;
 	margin: 2px auto 0;
@@ -172,11 +145,15 @@ p{
 }
 
 /* menu type */
-#menu{ 
+#menu{
 	position: relative;
-	left: -205px;
-	background-color: rgba(238, 238, 238, 0.8;)
+	/*left: -205px;*/
+	background-color: rgba(238, 238, 238, 0.8);
 	transition: all 0.3s ease-in-out 0.1s;
+	-webkit-transform: translate3d(-205px, 0px, 0px);
+	-ms-transform: translate3d(-205px, 0px, 0px);
+	-o-transform: translate3d(-205px, 0px, 0px);
+	transform: translate3d(-205px, 0px, 0px);
 }
 
 #menu li{
@@ -191,7 +168,7 @@ p{
 #menu li:first-child{
 	padding-left: 204px;
 	width: 100%;
-	height: 43px; 
+	height: 43px;
 	border-right: 0px;
 	border-bottom: 0px;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -206,8 +183,8 @@ p{
 	text-align: center;
 }
 
-.btn{ 
-	border-left: 1px solid #ccc; 
+#btn{
+	border-left: 1px solid #ccc;
 	padding: 5px 0 5px 5px;
 }
 
@@ -216,10 +193,8 @@ p{
 	height: 43px;
 	line-height: 43px;
 	padding: 0px 86px 0px 50px;
-	font-size: 17px;
+	font-size: 1em;
 	font-weight: 300;
-	font-family: STXhei, "华文细黑";
-	/*text-align: center;*/
 	text-decoration: none;
 	color: #666;
 	display: block;
@@ -231,7 +206,7 @@ p{
 	box-shadow: 6px 0px 3px 0 #ccc inset;
 }
 
-.actived{
+#menu .actived{
 	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 6px 0px 3px 0 #ccc inset;
 }
@@ -239,7 +214,7 @@ p{
 /* nav-bar
  ----------------------------------- */
 
-.nav-bar{ 
+.nav-bar{
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .logo{
@@ -276,7 +251,6 @@ p{
 	height: 41px;
 	line-height: 41px;
 	font-weight: 300;
-	font-family: STXihei,"华文细黑";
 	text-decoration: none;
 	color: #fff;
 	display: block;
@@ -286,55 +260,52 @@ p{
 
 #nav li a:hover{ background-color: #e74c3c; }
 
-.selected{ background-color: #e74c3c; }
+#nav .selected{ background-color: #e74c3c; }
 
 /* ------------------------------ about ------------------------ */
 
-.acontent img{
+#about img{
 	margin: 5px 8px 35px;
 }
 
-.acontent h1{
-	line-height: 1.2;
+#about h1{
 	margin-bottom: 15px;
+	line-height: 1.2;
+	color: #555;
+	font-size: 2.4em;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-.acontent div{
+#about div{
 	padding: 0;
 	margin-bottom: 10px;
-	font-size: 1.65em;
-	font-family: "Microsoft YaHei", "微软雅黑";
 	color: #8a8a8a;
+	font-size: 1.65em;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-.acontent p{ margin: 0; }
+#about p{
+	margin: 0;
+	font-weight: bold;
+	font-style: italic;
+}
 
 /* ------------------------------- allpro ------------------------- */
 
-.pro{ margin: 5px 0; }
-
-.pic img{ 
+#allpro .pro img{
 	margin: 8px 8px 23px;
 }
 
-.pictext h3{
-	font-size: 20px;
-	margin: 0 0 5px 0;
-	text-align: center;
-}
-
-.pictext h6{ 
-	font-size: 16px;
-	padding: 0;
-	margin: 0 0 5px 0;
-	color: #e74c3c;
-	text-align: center;
-}
-
 /* ------------------- category */
-.cate{ padding-top: 40px; }
+.type{ padding-top: 40px; }
 
-.catetitle{
+.category{
 	padding-bottom: 25px;
 	margin-left: 2%;
 	margin-right: 2%;
@@ -342,19 +313,18 @@ p{
 	border-bottom: 1px solid #e74c3c;
 }
 
-.catename{
-	font-size: 16px;
-	font-family: "微软雅黑";
-	font-weight: bold;
+.category .name{
 	padding: 0px;
 	position: absolute;
 	left: 0px;
+	font-weight: bold;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-.more a{
-	font-size: 14px;
-	font-weight: bold;
-	font-family: "华文细黑";
+.category a{
 	color: #222;
 	padding: 0;
 	position: absolute;
@@ -363,9 +333,11 @@ p{
 	cursor: pointer;
 	text-decoration: none;
 	border-bottom: 1px solid #222;
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
-.more a:visited{
+.category a:visited{
 	color: #777;
 	border-bottom: #777;
 }
@@ -375,11 +347,11 @@ p{
 .box{ margin-bottom: 35px; }
 .box:last-child{ margin-bottom: 0px; }
 
-.fimg img{
+.box-img img{
 	margin: 5px;
 }
 
-.fcon{ 
+.box-content{
 	padding: 20px;
 	margin: 5px 8px;
 	text-align: left;
@@ -387,23 +359,28 @@ p{
 	background-color: #e74c3c;
 }
 
-.fcon h3{
-	margin: 0 0 5px 0;
+.box-content h3{
+	text-align: left;
+	font-size: 1.5em;
+	font-family:
+	STXihei,
+	"华文细黑",
+	sans-serif;
 }
 
-.ftext{
+.box-content p{
 	padding: 5px 0;
 	margin-bottom: 5px;
 	line-height: 30px;
-	font-size: 18px;
-	font-family: 
+	font-size: 107%;
+	font-family:
 	"Raleway",
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-.ftext p{ margin: 0; }
+.box-content br{ display: none; }
 
 /* ---------------------------- manage ---------------------------- */
 
@@ -418,17 +395,31 @@ p{
 
 /* --------------------------- contact ------------------------- */
 
-.ctext{
-	font-size: 30px;
+.contact-text{
 	color: #555;
 	text-align: left;
+	font-size: 1.8em;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
+}
+
+.contact-text p{
+	margin: 0 11px 35px 11px;
+	word-wrap: break-word;
 }
 
 /* --------------------------- footer -------------------------- */
 
-.footext{
+.foot-text{
 	color: #fff;
 	margin: 5px 8px;
+	font-size: 1.1em;
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
 
