@@ -5,13 +5,19 @@ body{
 	padding: 0;
 	cursor: default;
 	font-size: medium;
-	font-family: 
-	Raleway,
-	STXihei,
-	"华文细黑",
-	"Microsoft YaHei",
-	"微软雅黑",
-	sans-serif;
+	font-family:
+		Raleway,
+		STXihei,
+		"华文细黑",
+		"Microsoft YaHei",
+		"微软雅黑",
+		sans-serif;
+}
+
+#body {
+	-webkit-transition: all 1s ease-in-out;
+		 -o-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
 }
 
 ul{
@@ -20,16 +26,16 @@ ul{
 	list-style: none;
 }
 
-h2{ 
+h2{
 	font-size: 2em;
 	color: #555;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-h4{ 
+h4{
 	margin-bottom: 10px;
 	font-size: 1.4em;
 	color: #8a8a8a;
@@ -40,23 +46,23 @@ h3{
 	margin: 0 0 5px 0;
 	text-align: center;
 	font-size: 1.2em;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-h6{ 
+h6{
 	padding: 0;
 	margin: 0 0 5px 0;
 	line-height: 30px;
 	text-align: center;
 	color: #e74c3c;
 	font-size: 1em;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
 p{ margin: 0; }
@@ -69,7 +75,7 @@ p{ margin: 0; }
 	height: 43px;
 	position: fixed;
 	z-index: 1;
-	background-color: rgba(238, 238, 238, 0.6); 
+	background-color: rgba(238, 238, 238, 0.6);
 }
 
 .nav-bar{
@@ -100,8 +106,8 @@ p{ margin: 0; }
 
 #about img,
 .pro img,
-.box img{ 
-	width: 95%; 
+.box img{
+	width: 95%;
 }
 
 /* ------------------- title */
@@ -118,7 +124,7 @@ p{ margin: 0; }
  ----------------------------------- */
 
 /* toggle type */
-.toggle{ 
+#toggle{
 	margin: 0;
 	padding: 10px 0;
 	width: 40px;
@@ -129,9 +135,9 @@ p{ margin: 0; }
 	z-index: 11;
 }
 
-.toggle div:first-child{ margin: 0 auto; }
+#toggle div:first-child{ margin: 0 auto; }
 
-.toggle div{
+#toggle div{
 	max-width: 16px;
 	height: 3px;
 	margin: 2px auto 0;
@@ -139,11 +145,15 @@ p{ margin: 0; }
 }
 
 /* menu type */
-#menu{ 
+#menu{
 	position: relative;
-	left: -205px;
-	background-color: rgba(238, 238, 238, 0.8;)
+	/*left: -205px;*/
+	background-color: rgba(238, 238, 238, 0.8);
 	transition: all 0.3s ease-in-out 0.1s;
+	-webkit-transform: translate3d(-205px, 0px, 0px);
+	-ms-transform: translate3d(-205px, 0px, 0px);
+	-o-transform: translate3d(-205px, 0px, 0px);
+	transform: translate3d(-205px, 0px, 0px);
 }
 
 #menu li{
@@ -158,7 +168,7 @@ p{ margin: 0; }
 #menu li:first-child{
 	padding-left: 204px;
 	width: 100%;
-	height: 43px; 
+	height: 43px;
 	border-right: 0px;
 	border-bottom: 0px;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -173,8 +183,8 @@ p{ margin: 0; }
 	text-align: center;
 }
 
-.btn{ 
-	border-left: 1px solid #ccc; 
+#btn{
+	border-left: 1px solid #ccc;
 	padding: 5px 0 5px 5px;
 }
 
@@ -204,7 +214,7 @@ p{ margin: 0; }
 /* nav-bar
  ----------------------------------- */
 
-.nav-bar{ 
+.nav-bar{
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .logo{
@@ -263,7 +273,7 @@ p{ margin: 0; }
 	line-height: 1.2;
 	color: #555;
 	font-size: 2.4em;
-	font-family: 
+	font-family:
 	"Microsoft YaHei",
 	"微软雅黑",
 	sans-serif;
@@ -274,21 +284,21 @@ p{ margin: 0; }
 	margin-bottom: 10px;
 	color: #8a8a8a;
 	font-size: 1.65em;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
 	sans-serif;
 }
 
-#about p{ 
-	margin: 0; 
+#about p{
+	margin: 0;
 	font-weight: bold;
 	font-style: italic;
 }
 
 /* ------------------------------- allpro ------------------------- */
 
-#allpro .pro img{ 
+#allpro .pro img{
 	margin: 8px 8px 23px;
 }
 
@@ -308,9 +318,9 @@ p{ margin: 0; }
 	position: absolute;
 	left: 0px;
 	font-weight: bold;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
 	sans-serif;
 }
 
@@ -341,7 +351,7 @@ p{ margin: 0; }
 	margin: 5px;
 }
 
-.box-content{ 
+.box-content{
 	padding: 20px;
 	margin: 5px 8px;
 	text-align: left;
@@ -352,7 +362,7 @@ p{ margin: 0; }
 .box-content h3{
 	text-align: left;
 	font-size: 1.5em;
-	font-family: 
+	font-family:
 	STXihei,
 	"华文细黑",
 	sans-serif;
@@ -363,11 +373,11 @@ p{ margin: 0; }
 	margin-bottom: 5px;
 	line-height: 30px;
 	font-size: 107%;
-	font-family: 
+	font-family:
 	"Raleway",
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
 .box-content br{ display: none; }
@@ -389,13 +399,13 @@ p{ margin: 0; }
 	color: #555;
 	text-align: left;
 	font-size: 1.8em;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
-.contact-text p{ 
+.contact-text p{
 	margin: 0 11px 35px 11px;
 	word-wrap: break-word;
 }
@@ -406,10 +416,10 @@ p{ margin: 0; }
 	color: #fff;
 	margin: 5px 8px;
 	font-size: 1.1em;
-	font-family: 
-	"Microsoft YaHei", 
-	"微软雅黑", 
-	sans-serif; 
+	font-family:
+	"Microsoft YaHei",
+	"微软雅黑",
+	sans-serif;
 }
 
 

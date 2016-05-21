@@ -23,7 +23,7 @@
 	.content {
 		width: 456px;
 	}
-	
+
 	.box-content{ margin: 5px 10px; }
 	.color{ padding: 70px, 0px; }
 }
@@ -34,15 +34,15 @@
 	.menu-bar{ display: none; }
 	.nav-menu{ display: none; }
 	.nav-bar{ display: block; }
-	
+
 	/* ------------------ change width*/
 	.content {
 		width: 656px;
 	}
 
 	/* ----------------- change layout------about*/
-	#about img{ 
-		width: 85%; 
+	#about img{
+		width: 85%;
 	}
 
 	/* ----------------- change layout------allpro*/
@@ -54,11 +54,11 @@
 	#allpro .pro img{
 		width: 95%;
 	}
-	
+
 	/* ---------------- change layout------factory*/
-	.box{ 
+	.box{
 		position: relative;
-		margin-bottom: 15px; 
+		margin-bottom: 15px;
 	}
 
 	.box-img{
@@ -79,12 +79,12 @@
 	}
 
 	.box-content br{ display: inline; }
-	
+
 	/* ---------------- change layout------manage*/
 	.framenarrow img{
 		display: none;
 	}
-	
+
 	.framewide img{
 		display: block;
 		margin-left: 5%;
@@ -103,9 +103,9 @@
 	.content {
 		width: 832px;
 	}
- 
-	.about img{ 
-		width: 76%; 
+
+	.about img{
+		width: 76%;
 	}
 
 	/* ------------------- change layout------factory*/
@@ -120,7 +120,7 @@
 	.content {
 		width: 960px;
 	}
-	
+
 	/* ------------------- change layout------factory*/
 	.box-img {
 		width: 68%;
