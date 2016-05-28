@@ -1,20 +1,5 @@
-.zhi,
-.che,
-.wan,
-.footer{
-	padding: 50px 0;
-}
-
-.zhi,
-.wan{ background-color: #ecf0f1; }
-
-.che{ background-color: #fff; }
-
-.zcontent,
-.ccontent,
-.wcontent,
-.foocon{ 
-	width: 296px; 
+.content {
+	width: 296px;
 	position: relative;
 }
 
@@ -55,9 +40,6 @@
 	transition: all 0.3s ease-in-out 0.1s;
 }
 
-.back a:active{
-	background-color: #e74c3c;
-}
 .back a:hover{
 	background-color: #e74c3c;
 }
@@ -80,26 +62,10 @@
 	display: inline-block;
 }
 
-/*
-.pictext{ 
-	text-align: center;
-}*/
-
-/* --------------------------- footer -------------------------- */
-/*
-.footext{
-	color: #fff;
-	margin: 5px 8px;
-}*/
-
-
 @media (min-width: 350px)
 {
 	/* ------------------- change width*/
-	.zcontent,
-	.ccontent,
-	.wcontent,
-	.foocon{ 
+	.content {
 		width: 316px;
 		margin: 0 auto;
 	}
@@ -108,10 +74,7 @@
 @media (min-width: 430px)
 {
 	/* ------------------- change width*/
-	.zcontent,
-	.ccontent,
-	.wcontent,
-	.foocon{ 
+	.content {
 		width: 396px;
 	}
 
@@ -120,10 +83,7 @@
 @media (min-width: 490px)
 {
 	/* ------------------- change width*/
-	.zcontent,
-	.ccontent,
-	.wcontent,
-	.foocon{ 
+	.content {
 		width: 456px;
 	}
 
@@ -143,15 +103,13 @@
 	.nav-bar{ display: block; }
 
 	/* ------------------ change width*/
-	.zcontent,
-	.ccontent,
-	.wcontent,
-	.foocon{ 
+	.content {
 		width: 656px;
 	}
 
 	/* ----------------- change layout------pro*/
 	.datetitle{ margin-left: 2%;}
+
 	.pro{
 		width: 23%;
 		margin-left: 1%;
@@ -163,20 +121,13 @@
 	}
 
 	/*  ---------------- change other size*/
-	.zhi,
-	.che,
-	.wan,
-	.footer{ padding: 75px 0px;}
+	.color { padding: 75px 0px;}
 }
-
 
 @media (min-width: 876px)
 {
 	/* ---------------- change width*/
-	.zcontent,
-	.ccontent,
-	.wcontent,
-	.foocon{ 
+	.content{
 		width: 832px;
 	}
 }
@@ -184,10 +135,7 @@
 @media (min-width: 1000px)
 {
 	/* ------------------- change width*/
-	.zcontent,
-	.ccontent,
-	.wcontent,
-	.foocon{ 
+	.content {
 		width: 960px;
 	}
 
@@ -198,7 +146,6 @@
 	.pro{
 		width: 18.5%;
 		margin-left: 1%;
-		/*margin-right: 0.5%;*/
 		display: inline-block;
 	}
 }

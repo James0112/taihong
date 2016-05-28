@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,11 +25,11 @@
 				</div>
 			</div>
 			</li>
-			<li><a class="actived" id="menu-about">关于我们</a>
-			<li><a id="menu-allpro">供应产品</a>
-			<li><a id="menu-factory">生产车间</a>
-			<li><a id="menu-manage">管理团队</a>
-			<li><a id="menu-contact">联系我们</a>
+			<li><a data-scroll class="actived" id="menu-about" href="#sec-about">关于我们</a>
+			<li><a data-scroll id="menu-allpro" href="#sec-allpro">供应产品</a>
+			<li><a data-scroll id="menu-factory" href="#sec-factory">生产车间</a>
+			<li><a data-scroll id="menu-manage" href="#sec-manage">管理团队</a>
+			<li><a data-scroll id="menu-contact" href="#sec-contact">联系我们</a>
 			<li>
 				<p>POWERED BY</p>
 				<img src="images/taihong.png" alt="">
@@ -43,11 +43,11 @@
 		</div>
 
 		<ul id="nav">
-			<li><a class="selected" id="nav-about">关于我们</a>
-			<li><a id="nav-allpro">供应产品</a>
-			<li><a id="nav-factory">生产车间</a>
-			<li><a id="nav-manage">管理团队</a>
-			<li><a id="nav-contact">联系我们</a>
+			<li><a data-scroll class="selected" id="nav-about" href="#sec-about">关于我们</a>
+			<li><a data-scroll id="nav-allpro" href="#sec-allpro">供应产品</a>
+			<li><a data-scroll id="nav-factory" href="#sec-factory">生产车间</a>
+			<li><a data-scroll id="nav-manage" href="#sec-manage">管理团队</a>
+			<li><a data-scroll id="nav-contact" href="#sec-contact">联系我们</a>
 		</ul>
 	</div> <!--  nav-bar -->
 
@@ -307,8 +307,29 @@
 
 </div>
 
-<!-- <script src="js/jquery-2.1.4.js"></script> -->
-<script src="js/taihong.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script>
+	smoothScroll.init({
+		speed: 800,
+	});
+
+	$("menu-about").addEventListener("click",   function(){
+		hideMenu();
+	}, false);
+	$("menu-allpro").addEventListener("click",  function(){
+		hideMenu();
+	}, false);
+	$("menu-factory").addEventListener("click", function(){
+		hideMenu();
+	}, false);
+	$("menu-manage").addEventListener("click",  function(){
+		hideMenu();
+	}, false);
+	$("menu-contact").addEventListener("click", function(){
+		hideMenu();
+	}, false);
+</script>
 
 </body>
 </html>

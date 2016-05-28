@@ -6,7 +6,7 @@
 Get started at https://james0112.github.io/taihong
 
 ## Changelog
-### 2015.05.21 --- 0.1.5
+### 2015.05.29 --- 0.1.5
 	删除 jQuery
 
 ### 2015.01.05 --- 0.1.4
