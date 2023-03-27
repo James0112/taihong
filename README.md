@@ -1,7 +1,7 @@
 ## Taihong
 ### a static website of the taihong factory
 
-泰红塑料制品厂官方网站，是由谌吉(James Chan)整体设计、开发制作。目前仍处于测试阶段，内容为临时填充。
+泰红塑料制品厂官方网站，是由**(J**** C***)整体设计、开发制作。目前仍处于测试阶段，内容为临时填充。
 
 Get started at https://james0112.github.io/taihong
 
